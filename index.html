@@ -10,19 +10,26 @@
         <style>
             * {
                 box-sizing: border-box;
-
             }
             #container {
                 width: 90%;
                 margin: 0 auto;
                 /* border: 1px solid black; */
                 padding: 10px;
-
+            }
+            #menu{
+                position: fixed;
+                right:10%;
+                bottom:180px;
+                text-align: center;
+                width:220px;
+                height:200px;
+                background: url("3.png") no-repeat center;
+                background-size: cover;
             }
             header {
                 width: 100%;
                 background-color: black;
-
             }
             header ul li {
                 color: white;
@@ -31,7 +38,6 @@
                 padding: 20px;
                 font-size: 1.5em;
                 font-weight: bold;
-
             }
             footer {
                 background-color: black;
@@ -48,7 +54,6 @@
                 width: auto;
                 height: 300px;
             }
-
             section h2 {
                 margin: 10px;
             }
@@ -57,8 +62,9 @@
                 flex-direction: row;
                 flex-wrap: wrap;
             }
-
-            #a1,#a2,#a3 {
+            #a1,
+            #a2,
+            #a3 {
                 justify-content: space-start;
             }
             #p1 {
@@ -74,7 +80,6 @@
                 width: 320px;
                 height: 200px;
             }
-
             #p3 {
                 background: url("ice.jpg");
                 background-size: cover;
@@ -105,7 +110,6 @@
                 height: 300px;
                 padding: 10px;
                 right: 30px;
-
             }
             header nav ul li:hover {
                 background-color: white;
@@ -120,7 +124,6 @@
             /*그림 넘어가는게 걸리적 거려서 크기 줄이는 것보다 
             도중에 없애는게 자연스러울꺼 같아서
             없앴습니다*/
-
             @media screen and (max-width:1023px) {
 
                 section {
@@ -134,14 +137,16 @@
                 p {
                     font-size: 1.1em;
                 }
-                #p1,#p2,#p3 {
+                #p1,
+                #p2,
+                #p3 {
                     display: none;
                 }
             }
             @media screen and (max-width:767px) {
-                header{
-                    padding:0px;
-                   
+                header {
+                    padding: 0;
+
                 }
                 header ul li {
                     color: white;
@@ -157,20 +162,25 @@
                     flex-wrap: wrap;
                     /* margin:0 auto; */
                 }
-                #d1,#d2,#d3 {
+                #d1,
+                #d2,
+                #d3 {
                     width: 100%;
                     height: 450px;
                 }
-                #p1,#p2,#p4 {
+                #p1,
+                #p2,
+                #p4 {
                     display: block;
-                    width:100%;
+                    width: 100%;
+
                 }
             }
         </style>
     </head>
     <body>
         <div id="container">
-            <header>
+            <header id="header">
                 <nav>
                     <ul>
                         <li>
@@ -187,7 +197,6 @@
                 </nav>
             </header>
             <section>
-
                 <div id="d1">
                     <h3>까페 소개</h3>
                     <article id="a1">
@@ -197,7 +206,6 @@
                         </p>
                     </article>
                 </div>
-
                 <div id="d2">
                     <h3>오시는 길</h3>
                     <article id="a2">
@@ -205,10 +213,8 @@
                         <p>서울시 성동구 무학로2길 54 왕십리 도선동 상점가</p>
                     </article>
                 </div>
-
                 <div id="d3">
                     <article id="a3">
-
                         <ol>
                             <h3>이달의 추천<br>
                                 <div id="p4"></div>
@@ -219,8 +225,10 @@
                         </ol>
                         <div id="p3"></div>
                     </div>
-
                 </article>
+               <a href="#header">
+                   
+                <div id="menu"></div></a>
             </section>
             <footer>
                 <p>Break Times With Coffee -B.T.W.C</p>
