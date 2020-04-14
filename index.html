@@ -36,13 +36,11 @@
             footer {
                 background-color: black;
                 padding: 10px;
-
             }
             footer p {
                 color: white;
                 font-size: 1.5em;
                 text-align: center;
-
             }
             header div {
                 background: url("header.jpg") no-repeat center;
@@ -62,16 +60,13 @@
 
             #a1,#a2,#a3 {
                 justify-content: space-start;
-
             }
-
             #p1 {
                 background: url("coffee.jpg") no-repeat center;
                 background-size: cover;
                 border: 1px solid black;
                 width: 320px;
                 height: 200px;
-
             }
             #p2 {
                 background: url(map.jpg)no-repeat center;
@@ -103,9 +98,7 @@
             }
             #d2 {
                 background-color: lightblue;
-
                 width: 100%;
-
             }
             #d3 {
                 width: 100%;
@@ -129,14 +122,7 @@
             없앴습니다*/
 
             @media screen and (max-width:1023px) {
-                header ul li {
-                    color: white;
-                    list-style: none;
-                    display: inline-block;
-                    padding: 10px;
-                    font-size: 1.2em;
-                    font-weight: bold;
-                }
+
                 section {
                     display: flex;
                     flex-wrap: wrap;
@@ -153,12 +139,16 @@
                 }
             }
             @media screen and (max-width:767px) {
+                header{
+                    padding:0px;
+                   
+                }
                 header ul li {
                     color: white;
                     list-style: none;
                     display: inline-block;
-                    padding: 10px;
-                    font-size: 1.1em;
+                    padding: 4px;
+                    font-size: 3vw;
                     font-weight: bold;
                 }
                 article {
@@ -173,6 +163,7 @@
                 }
                 #p1,#p2,#p4 {
                     display: block;
+                    width:100%;
                 }
             }
         </style>
